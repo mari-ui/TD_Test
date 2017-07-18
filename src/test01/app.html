@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-12 text-center">
+        <h2>Book an Appointment</h2>
+        <h4 >Our Investing Topics</h4>
+         <h4 class="padd-30">Pick a topic, then we'll find a time and place </h4>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-12 " ng-class="products.length==5 ? 'col-lg-6':'col-lg-12'" data-adjust-height>
+        
+        <div class="col-sm-12  padd-20 "  ng-class="products.length==5 ? 'col-lg-12': products.length ==1 ? 'col-lg-offset-3 col-lg-6':'col-lg-6'" ng-repeat ="btn in products">
+          <input type="button" class="btn btn-default full-width green-btn" value="{{generateKey(btn.text) | translate}}"/>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <span class="arrow"> Return to Previous screen</span>
+    </div>
+</div>
